@@ -1,7 +1,6 @@
-group 'io.github.seanzhang'
+group 'io.github.seanzhang0316'
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'idea'
 
 repositories {
@@ -9,11 +8,16 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.10
+
+targetCompatibility = 1.10
 
 dependencies {
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+    compile group: 'com.google.guava', name: 'guava', version: '24.1-jre'
     compile group: 'log4j', name: 'log4j', version: '1.2.17'
     testCompile group: 'org.testng', name: 'testng', version: '6.14.2'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.19.0'
+
 }
 
